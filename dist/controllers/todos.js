@@ -10,7 +10,7 @@ var createTodo = function (req, res, next) {
     res.status(201).json({ message: 'TODO', createdTodo: newTodo });
 };
 exports.createTodo = createTodo;
-var getTodos = function (rew, res, next) {
+var getTodos = function (req, res, next) {
     res.json({ todos: TODOS });
 };
 exports.getTodos = getTodos;

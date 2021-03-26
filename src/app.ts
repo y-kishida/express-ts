@@ -4,7 +4,7 @@ import { json } from 'body-parser';
 
 const app = express();
 
-app.use((json));
+app.use(json());
 
 app.use('/todos', todoRoutes);
 
